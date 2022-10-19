@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub-menu</title>
+    <style>
+        .menu ul li{
+            background-color: #6da3f9;
+            color: white;
+            float: left;
+            width: 200px;
+            height: 40px;
+            display: inline-block;
+            text-align: center;
+            line-height: 40px;
+            font-size: 25px;
+            position: relative;
+        }
+        .menu ul li:hover{
+            background-color: #2c69cc;
+        }
+        .menu ul{
+            padding: 0px;
+        }
+        .menu ul ul {
+            display: none;
+        }
+        .menu ul li:hover > ul{
+            display: block;
+        }
+        .menu ul ul ul{
+            margin-left: 201px;
+            top: 0px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li>Argentina</li>
+            <li>Brasil
+                <ul>
+                    <li>Norte</li>
+                    <li>Nordeste
+                        <ul>
+                            <li>Bahia</li>
+                            <li>Pernambuco</li>
+                            <li>Sergipe</li>
+                            <li>Alagoas</li>
+                        </ul>
+                    </li>
+                    <li>Centro-Oeste</li>
+                    <li>Sul</li>
+                    <li>Sudoeste
+                        <ul>
+                            <li>Minas Gerais</li>
+                            <li>Espirito Santo</li>
+                            <li>Sao Paulo</li>
+                            <li>Rio de Janeiro</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>Colombia</li>
+            <li>Guine-Bissau</li>
+        </ul>
+
+    </nav>
+    
+</body>
+</html>
