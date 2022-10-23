@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        caption{
+            background-color: rgba(128, 128, 128, 0.892);
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 0.8em;
+            font-weight: normal;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: red;
+            font-weight: bold;
+        }
+        table{
+            width: 700px;
+            border-collapse: collapse;
+        }
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: rgb(133, 137, 216);
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n){ /*o efeito zebrado - é usado para pintar una linha depois saltar uma linha e pintar a outra dependendo do :nth-child(2n/3n/odd ou 2n-1(impar)/even ou 2n (par) sao as opções que podemos adicionar)e essa opcção e escolhido sem afetar o cabeçalho*/
+            background-color: lightgray;
+        }
+        td.num{
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        Anatomia para tabelas(Grandes)
+        TABLE
+            CAPTION
+            THEAD
+                TR(linha de tabela), TD(dado de tabela), TH(cabeçalho de tabela)
+            TBODY
+                TR, TD, TH
+            TFOOT 
+                TR, TD, TH
+    -->
+   
+    <table>
+
+        <caption>
+            Cidades mais populosas da Guiné-Bissau<br title=""><a href="http://www.geonames.org/GW/largest-cities-in-guinea-bissau.html" target="_blank">Para mais infomação clique aqui.</a></br>
+        </caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Localidade</th>
+                <th scope="col">Região</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+            
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>Bissau</td>
+                <td>Sector autónomo de Bissau</td>
+                <td class="num">388 028</tr>
+            </tr>
+
+            <tr>
+                <td>02</td>
+                <td>Bafatá</td>
+                <td>Bafatá</td>
+                <td class="num">22521</td>
+            </tr>
+
+            <tr>
+                <td>03</td>
+                <td>Gabu</td>
+                <td>Gabu</td>
+                <td class="num">14430</td>
+            </tr>
+
+            <tr>
+                <td>04</td>
+                <td>Bissorã</td>
+                <td>Oio</td>
+                <td class="num">12688</td>
+            </tr>
+
+            <tr>
+                <td>05</td>
+                <td>Bolama</td>
+                <td>Bolama</td>
+                <td class="num">10769</td>
+            </tr>
+
+            <tr>
+                <td>06</td>
+                <td>Cacheu</td>
+                <td>Cacheu</td>
+                <td class="num">10490</td>
+            </tr>
+
+            <tr>
+                <td>07</td>
+                <td>Bubaque</td>
+                <td>Bolama</td>
+                <td class="num">9941</td>
+            </tr>
+
+            <tr>
+                <td>08</td>
+                <td>Catió</td>
+                <td>Tombali</td>
+                <td class="num">9898</td>
+            </tr>
+
+            <tr>
+                <td>09</td>
+                <td>Mansõa</td>
+                <td>Oio</td>
+                <td class="num">7821</td>
+            </tr>
+
+            <tr>
+                <td>10</td>
+                <td>Buba</td>
+                <td>Quinara</td>
+                <td class="num">7779</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td></td>
+                <td></td>
+                <td><strong>0000000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>
